@@ -1,52 +1,122 @@
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
+/* Remove the navbar's default margin-bottom and rounded borders */ 
 
-    html {
-      position: relative;
-      min-height: 100%;
-    }
-    body {
-      /* Margin bottom by footer height */
-      margin-bottom: 60px;
-    }
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
 
-    .footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height: 60px;
-      line-height: 60px;
-      background-color: #555;
-      color: white;
-    }
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
 
-    .footer p{
-      margin:0;
-      padding:0;
-      text-align: left;
-      font-size: small;
-    }
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #555;
+  color: white;
+}
 
-    .row{
-      padding-top: 1.5rem;
-    }
+.footer p{
+  margin:0;
+  padding:0;
+  text-align: left;
+  font-size: small;
+}
 
-    .card{
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      margin-bottom: 1.5rem;
-    }
+.row{
+  padding-top: 1.5rem;
+}
 
-    .menuicon{
-      width: 110px;
-      height: 110px;
-      margin-bottom: 1rem;
-    }
+.card{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
 
-    .card h5{
-      text-decoration: none;
-    }
+.menuicon{
+  width: 110px;
+  height: 110px;
+  margin-bottom: 1rem;
+}
+
+.card h5{
+  text-decoration: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  width:100%;
+  text-align: center;
+}
+
+.navbar-brand-centered{
+  width: 100%;
+  text-align:center;
+}
+
+.navbar-brand-resizable{
+  width: 100%;
+  text-align:right;
+}
+
+@media screen and (min-width:768px){
+  .navbar-brand-resizable {
+      text-align: center;
+  }
+}
+
+
+/* Icon 3*/
+
+.animated-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon3 span:nth-child(2), .animated-icon3 span:nth-child(3) {
+  top: 10px;
+}
+
+.animated-icon3 span:nth-child(4) {
+  top: 20px;
+}
+
+.animated-icon3.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.animated-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.animated-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.animated-icon3.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}

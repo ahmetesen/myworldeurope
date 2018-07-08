@@ -1,24 +1,29 @@
 doctype html
 html
   head
-    title= title
-
-    
-
-
-    meta(charset="utf-8")
-    meta(name="viewport",content="width=device-width, initial-scale=1")
-    link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css")
-    link(rel="stylesheet",href="./stylesheets/style.css")
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js")
-    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js")
-    block extraHeader
+    include ./head.jade
   body
-    nav(class="navbar navbar-expand-sm bg-dark navbar-dark")
-      a(class="navbar-brand", style="color:#fff") MWE
+    nav(class="navbar navbar-expand-lg bg-dark navbar-dark")
+      a.navbar-brand(style="color:#fff") My World Europe
+      |     
+      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      |   
+      |     
+      #navbarSupportedContent.collapse.navbar-collapse
+        - var pages = ["Anasayfa","Servisler", "İETT", "Dükkanlar","Yönetim","Teknik","Güvenlik","Sosyal","Önerileriniz"]
+        - var links = ["./","./servisler","./iett","./dukkanlar","./yonetim","./teknik","./guvenlik","./sosyal","./onerileriniz"]
+        ul.navbar-nav.ml-auto
+
+          -each page,index in pages
+            li.nav-item
+              if page == title
+                a.nav-link.active(href='#')= page
+                  span.sr-only (current)
+              else
+                a.nav-link(href=links[index])= page
+                
     main(class="container text-center",style="margin-top:30px")   
       block content
 
-    footer(class="footer container-fluid text-center")
-      p My World europe - 2018
+    include ./footer.jade

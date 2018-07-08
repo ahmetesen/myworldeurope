@@ -4,8 +4,9 @@
  */
 
 var express = require('express')
-  , routes = require('./routes')
+  , routes = require('./routes/routeroot')
   , user = require('./routes/user')
+  , json = require('./routes/json')
   , http = require('http')
   , path = require('path');
 
@@ -28,6 +29,8 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/servisler',routes.servisler);
+app.get('/json/servisdata',json.servisdata);
 app.get('/users', user.list);
 app.post('/savevisits',routes.save);
 

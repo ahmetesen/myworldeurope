@@ -6,6 +6,9 @@
 exports.index = function(req, res){
   res.render('index', { title: 'My World Europe' });
 };
+exports.servisler = function(req, res){
+  res.render('servisler', { title: 'Servisler' });
+};
 exports.save = function(req, res){
   const fs = require('fs');
 
