@@ -9,6 +9,9 @@ exports.index = function(req, res){
 exports.servisler = function(req, res){
   res.render('servisler', { title: 'Servisler' });
 };
+exports.iletisim = function(req, res){
+  res.render('iletisim', { title: 'İletişim' });
+};
 exports.save = function(req, res){
   const fs = require('fs');
 

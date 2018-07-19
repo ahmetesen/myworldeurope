@@ -144,3 +144,21 @@ body {
 	border-right-width: 1px;
 }
 
+.contactForm{
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 303px;
+}
+
+main.container{
+  padding-bottom:30px;
+}
+
+.msg-error {
+  color: #c65848;
+}
+.g-recaptcha.error {
+  border: solid 1px #c64848;
+  padding: .2em;
+  width: 19em;
+}

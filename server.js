@@ -4,6 +4,7 @@
  */
 
 var express = require('express')
+  , mailsender = require('./mailsender')
   , routes = require('./routes/routeroot')
   , user = require('./routes/user')
   , json = require('./routes/json')
@@ -30,8 +31,10 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/servisler',routes.servisler);
+app.get('/iletisim',routes.iletisim);
 app.get('/json/servisdata',json.servisdata);
 app.get('/users', user.list);
+app.post('/sendmail', mailsender.mailsender);
 app.post('/savevisits',routes.save);
 
 http.createServer(app).listen(app.get('port'), function(){
