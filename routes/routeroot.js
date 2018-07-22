@@ -9,6 +9,12 @@ exports.index = function(req, res){
 exports.servisler = function(req, res){
   res.render('servisler', { title: 'Servisler' });
 };
+exports.iett = function(req, res){
+  res.render('iett', { title: 'İETT' });
+};
+exports.dukkanlar = function(req, res){
+  res.render('dukkanlar', { title: 'Dükkanlar' });
+};
 exports.iletisim = function(req, res){
   res.render('iletisim', { title: 'İletişim' });
 };

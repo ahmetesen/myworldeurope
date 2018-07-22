@@ -54,13 +54,13 @@ $(document).ready(function($) {
                 listGroup.addClass('list-group-horizontal');
 
                 $.each(subValue, function(listIndex,listValue){
-
                     var listItem = $('<li></li>');
-                    listItem.addClass('list-group-item');
+                    if(subIndex!="Notlar"){
+                    listItem.addClass('list-group-item');}
                     listItem.text(listValue);
                     listGroup.append(listItem);
                     console.log("subindex: "+ listIndex, " subvalue:"+listValue);
-
+                
                 });
 
                 containerDiv.append(listGroup);

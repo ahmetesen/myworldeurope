@@ -31,6 +31,8 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/servisler',routes.servisler);
+app.get('/iett',routes.iett);
+app.get('/dukkanlar',routes.dukkanlar);
 app.get('/iletisim',routes.iletisim);
 app.get('/json/servisdata',json.servisdata);
 app.get('/users', user.list);

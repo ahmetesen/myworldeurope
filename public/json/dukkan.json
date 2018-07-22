@@ -1,11 +1,124 @@
 {
-    "Belis":{
-        "Telefon":"0850 225 4626"
-    },
-    "Ergin Badur":{
-        "Telefon":"0850 224 7799"
-    },
-    "Robert's":{
-        "Telefon":"0850 224 3613"
-    }
+    "dukkanlar": [
+        {
+            "name":"Onur Fırın",
+            "phone":"0212 801 1644",
+            "notes":""
+        },
+        {
+            "name":"Ağaoğlu My world Eczane",
+            "phone":"0212 801 5051",
+            "notes":""
+        },
+        {
+            "name":"Seyyah Cafe",
+            "phone":"0532 710 1070",
+            "notes":""
+        },
+        {
+            "name":"Doğu Batı Market",
+            "phone":"0212 403 0082",
+            "notes":""
+        },
+        {
+            "name":"Kuaför Ergin Badur",
+            "phone":"0850 224 7799",
+            "notes":""
+        },
+        {
+            "name":"Robert's Cofee",
+            "phone":"0850 224 3613",
+            "notes":""
+        },
+        {
+            "name":"Marka Tekel Şarküteri",
+            "phone":"0212 429 7471",
+            "notes":""
+        },
+        {
+            "name":"Carnela",
+            "phone":"0533 092 0341",
+            "notes":""
+        },
+        {
+            "name":"Coldwell Banker Emlak",
+            "phone":"0212 671 9798",
+            "notes":""
+        },
+        {
+            "name":"Corpus Turizm",
+            "phone":"0533 963 3530",
+            "notes":""
+        },
+        {
+            "name":"Hi İstanbul",
+            "phone":"0553 211 1118",
+            "notes":""
+        },
+        {
+            "name":"Angel Kuaför",
+            "phone":"0212 500 1459",
+            "notes":""
+        },
+        {
+            "name":"Taiba Kuyumculuk",
+            "phone":"0552 234 4577",
+            "notes":""
+        },
+        {
+            "name":"Belis Şarküteri",
+            "phone":"0850 225 4626",
+            "notes":""
+        },
+        {
+            "name":"Kan Zaman Cafe",
+            "phone":"0212 397 1950",
+            "notes":""
+        },
+        {
+            "name":"Kaya Bilişim",
+            "phone":"0212 777 0939",
+            "notes":""
+        },
+        {
+            "name":"Turyap Emlak",
+            "phone":"0212 603 6644",
+            "notes":""
+        },
+        {
+            "name":"El-Faruk Cafe",
+            "phone":"0544 443 1333",
+            "notes":""
+        },
+        {
+            "name":"Pizza Special",
+            "phone":"0212 803 1363",
+            "notes":""
+        },
+        {
+            "name":"Çarşı Ekonomik Halk Pazarı",
+            "phone":"0212 803 1363",
+            "notes":""
+        },
+        {
+            "name":"Oriento Cafe",
+            "phone":"0212 235 7463",
+            "notes":""
+        },
+        {
+            "name":"Academy Kids Anaokulu",
+            "phone":"0212 675 2528",
+            "notes":""
+        },
+        {
+            "name":"Ağaoğlu Taksi",
+            "phone":"0212 777 4434",
+            "notes":""
+        },
+        {
+            "name":"Ağaoğlu Oto Yıkama",
+            "phone":"0537 661 9274",
+            "notes":""
+        }
+    ]
 }

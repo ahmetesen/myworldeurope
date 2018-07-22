@@ -1,32 +1,51 @@
+$(document).ready(function($) {
+  
+  $('#contactForm').submit(function(e) {
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        var $captcha = $( '#recaptcha' ),
-        response = grecaptcha.getResponse();
-    
-        if (response.length === 0) {
-        $( '.msg-error').text( "Lütfen üstteki kutucuğu işaretleyiniz." );
-        if( !$captcha.hasClass( "error" ) ){
-            $captcha.addClass( "error" );
-        }
-        } else {
-        $( '.msg-error' ).text('');
-        $captcha.removeClass( "error" );
-        alert( 'reCAPTCHA marked' );
-        }
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+    e.preventDefault();
+    e.stopPropagation();
+    response = grecaptcha.getResponse();
+    if (response.length === 0) {
+      $( '.msg-error').text( "Lütfen üstteki kutucuğu işaretleyiniz." );
+      if( !$('#recaptcha').hasClass( "error" ) ){
+        $('#recaptcha').addClass( "error" );
+      }
+    }
+    else {
+      $( '.msg-error' ).text('');
+      $('#recaptcha').removeClass( "error" );
+      if($('#contactForm')[0].checkValidity())
+        formCompleteSuccessfuly(response);
+    }
+    $('#contactForm')[0].classList.add('was-validated');
+
+  });
+
+  $('button[type="submit"]').removeAttr('disabled');
+
+  function formCompleteSuccessfuly(captchaCode){
+
+    var name=$('#name').val();
+    var email=$('#email').val();
+    var message = $('#message').val();
+
+    if(message.length>400){
+      showSimpleModal("Uyarı!", "400 karakterden fazla mesaj giremezsiniz!");
+      return;
+    }
+
+    data = {'name':name,'email':email,'message':message, 'captcha':captchaCode};
+    url = "./mailsender";
+
+    $.post('./sendmail', data)
+      .done(function(res){
+        showTimeoutModal("Bilgi",res.responseDesc);
+        console.log("done",res);
+      })
+      .fail(function(res){
+        showSimpleModal("Uyarı!",res.responseDesc);
+      });
+  }
+
+});
+

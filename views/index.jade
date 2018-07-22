@@ -4,10 +4,12 @@ html
     include ./head.jade
   body
     nav(class="navbar navbar-expand-sm bg-dark navbar-dark")
-      a(class="navbar-brand navbar-brand-centered", style="color:#fff") My World Europe
+      a(class="navbar-brand", style="color:#fff") My World Europe
 
     main(class="container text-center",style="margin-top:30px")  
 
+      div(class="summary")
+        p Bu web sitesi, site sakinleri tarafından, yine site sakinlerine kolaylık olması amaçlı oluşturulmuştur. Site Yönetim kadrosuyla bir ilgisi bulunmamaktadır.
       div(class="row")
         div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
           div(class="card")
@@ -23,41 +25,41 @@ html
 
         div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
           div(class="card")
-            a(href="./iett")
+            a(href="./dukkanlar")
                 img(class="card-image menuicon",src="./images/dukkan.jpg")
                 h5(class="card-title") Dükkanlar
+        //
+          div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
+            div(class="card")
+              a(href="./iett")
+                  img(class="card-image menuicon",src="./images/yonetim2.jpg")
+                  h5(class="card-title") Yönetim
 
-        div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
-          div(class="card")
-            a(href="./iett")
-                img(class="card-image menuicon",src="./images/yonetim2.jpg")
-                h5(class="card-title") Yönetim
+          div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
+            div(class="card")
+              a(href="./iett")
+                  img(class="card-image menuicon",src="./images/teknik.jpg")
+                  h5(class="card-title") Teknik
 
-        div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
-          div(class="card")
-            a(href="./iett")
-                img(class="card-image menuicon",src="./images/teknik.jpg")
-                h5(class="card-title") Teknik
+          div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
+            div(class="card")
+              a(href="./iett")
+                  img(class="card-image menuicon",src="./images/guvenlik.jpg")
+                  h5(class="card-title") Güvenlik
 
-        div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
-          div(class="card")
-            a(href="./iett")
-                img(class="card-image menuicon",src="./images/guvenlik.jpg")
-                h5(class="card-title") Güvenlik
-
-        div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
-          div(class="card")
-            a(href="./iett")
-                img(class="card-image menuicon",src="./images/sosyal.jpg")
-                h5(class="card-title") Sosyal Medya
+          div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
+            div(class="card")
+              a(href="./iett")
+                  img(class="card-image menuicon",src="./images/sosyal.jpg")
+                  h5(class="card-title") Sosyal Medya
 
         div(class="mainmenu col-lg-3 col-md-4 col-sm-6 col-xs-6")
           div(class="card")
             a(href="./iletisim")
                 img(class="card-image menuicon",src="./images/ulas.jpg")
                 h5(class="card-title") İletişim
-
-      div(class="row")
-        h2(class="text-center") Duyurular
+      //
+        div(class="row")
+          h2(class="text-center") Duyurular
 
     include ./footer.jade

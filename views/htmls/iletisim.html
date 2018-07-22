@@ -1,7 +1,7 @@
 <div class="col-12 col-lg-10 margin-center contactForm">
     <p>Aşağıdaki formu kullanarak bize ulaşabilir, öneride ya da şikayette bulunabilirsiniz. 
     </p>
-    <form class="needs-validation" novalidate>
+    <form id="contactForm" class="needs-validation" novalidate>
         <div class="form-group">
             <label for="name">Ad Soyad</label>
             <input type="text" class="form-control" id="name" required>
@@ -15,10 +15,10 @@
         <div id="recaptcha" class="g-recaptcha" data-sitekey="6LdsfWQUAAAAAEMVab4IFbRQThX79ZXVhAu9yZLk" data-size="compact"></div>
         <span class="msg-error error"></span>
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">Mesajınız</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            <label for="message">Mesajınız</label>
+            <textarea maxlength="400" class="form-control" id="message" rows="3" required></textarea>
             <div class="invalid-feedback">Lütfen mesajınızı giriniz.</div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" disabled="disabled" class="btn btn-primary">Submit</button>
     </form>
 </div>
