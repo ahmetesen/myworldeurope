@@ -16,13 +16,14 @@
     "express"
   ],
   "dependencies": {
-    "jade": "*",
     "express": "~3.1.0",
-    "nodemailer": "4.6.7"
+    "jade": "*",
+    "nodemailer": "4.6.7",
+    "request": "^2.87.0"
   },
   "noAnalyze": true,
   "license": "Apache",
   "engines": {
-    "node": "~0.10.0 || ~4.2.0"
+    "node": "8.9.4"
   }
 }

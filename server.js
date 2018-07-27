@@ -7,7 +7,7 @@ var express = require('express')
   , mailsender = require('./mailsender')
   , routes = require('./routes/routeroot')
   , user = require('./routes/user')
-  , json = require('./routes/json')
+  //, json = require('./routes/json')
   , http = require('http')
   , path = require('path');
 
@@ -34,7 +34,7 @@ app.get('/servisler',routes.servisler);
 app.get('/iett',routes.iett);
 app.get('/dukkanlar',routes.dukkanlar);
 app.get('/iletisim',routes.iletisim);
-app.get('/json/servisdata',json.servisdata);
+//app.get('/json/servisdata',json.servisdata);
 app.get('/users', user.list);
 app.post('/sendmail', mailsender.mailsender);
 app.post('/savevisits',routes.save);

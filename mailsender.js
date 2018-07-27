@@ -1,3 +1,5 @@
+"use strict";
+
 const nodemailer = require('nodemailer');
 var request = require('request');
 
@@ -23,7 +25,7 @@ exports.mailsender = function(req, res){
             return res.status(400).json({"responseCode" : 1,"responseDesc" : "Bir hata oluştu :("});
         }
 
-        mailText = "Gönderen Adı:"+req.body.name+"\nGönderen Adresi: "+req.body.email+"\nMesaj:"+req.body.message;
+        var mailText = "Gönderen Adı:"+req.body.name+"\nGönderen Adresi: "+req.body.email+"\nMesaj:"+req.body.message;
 
 
         nodemailer.createTestAccount((err, account) => {
