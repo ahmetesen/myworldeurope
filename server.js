@@ -5,7 +5,7 @@
 
 var express = require('express')
   , mailsender = require('./mailsender')
-  , routes = require('./routes/routeroot')
+  , pageRoutes = require('./routes/pages')
   , user = require('./routes/user')
   //, json = require('./routes/json')
   , http = require('http')
@@ -29,15 +29,15 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
-app.get('/servisler',routes.servisler);
-app.get('/iett',routes.iett);
-app.get('/dukkanlar',routes.dukkanlar);
-app.get('/iletisim',routes.iletisim);
+app.get('/', pageRoutes.index);
+app.get('/servisler',pageRoutes.servisler);
+app.get('/iett',pageRoutes.iett);
+app.get('/dukkanlar',pageRoutes.dukkanlar);
+app.get('/iletisim',pageRoutes.iletisim);
 //app.get('/json/servisdata',json.servisdata);
 app.get('/users', user.list);
 app.post('/sendmail', mailsender.mailsender);
-app.post('/savevisits',routes.save);
+app.post('/savevisits',pageRoutes.save);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
