@@ -28,6 +28,12 @@ var pageData = {
     canonical:'http://www.myworldeurope.net/dukkanlar',
     keywords:'ağaoğlu, my world europe, çarşı, dükkan, alış veriş'
   },
+  yonetim:{
+    title:'Site Yönetimi - My World Europe',
+    description:'Ağaoğlu My World Europe Sitesi, Site Yönetimi İrtibat Numaraları',
+    canonical:'http://www.myworldeurope.net/yonetim',
+    keywords:'ağaoğlu, my world europe, yonetim, site yönetimi'
+  },
   iletisim:{
     title:'İletişim - My World Europe',
     description:'Ağaoğlu My World Europe Web Sitesi Yöneticilerine Ulaşın',
@@ -47,6 +53,9 @@ exports.iett = function(req, res){
 };
 exports.dukkanlar = function(req, res){
   res.render('dukkanlar', pageData.dukkanlar);
+};
+exports.yonetim = function(req, res){
+  res.render('yonetim', pageData.yonetim);
 };
 exports.iletisim = function(req, res){
   res.render('iletisim', pageData.iletisim);

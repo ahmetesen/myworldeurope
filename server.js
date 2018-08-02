@@ -33,6 +33,7 @@ app.get('/', pageRoutes.index);
 app.get('/servisler',pageRoutes.servisler);
 app.get('/iett',pageRoutes.iett);
 app.get('/dukkanlar',pageRoutes.dukkanlar);
+app.get('/yonetim',pageRoutes.yonetim);
 app.get('/iletisim',pageRoutes.iletisim);
 //app.get('/json/servisdata',json.servisdata);
 app.get('/users', user.list);

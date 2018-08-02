@@ -11,10 +11,10 @@ html(lang="tr")
       |   
       |     
       #navbarSupportedContent.collapse.navbar-collapse
-        - var pages = ["Servisler", "İETT", "Dükkanlar","İletişim"]
-        - var links = ["./servisler","./iett","./dukkanlar","./iletisim"]
+        - var pages = ["Servisler", "İETT", "Çarşı","Yönetim","İletişim"]
+        - var links = ["./servisler","./iett","./dukkanlar","./yonetim","./iletisim"]
         //
-          - var pages = ["Servisler", "İETT", "Dükkanlar","Yönetim","Teknik","Güvenlik","Sosyal","İletişim"]
+          - var pages = ["Servisler", "İETT", "Çarşı","Yönetim","Teknik","Güvenlik","Sosyal","İletişim"]
           - var links = ["./servisler","./iett","./dukkanlar","./yonetim","./teknik","./guvenlik","./sosyal","./iletisim"]
         
         ul.navbar-nav.ml-auto
@@ -32,11 +32,11 @@ html(lang="tr")
         div(class="modal-dialog",role="document")
           div(class="modal-content")
             div(class="modal-header")
-              h5(class="modal-title") Title
+              h5(class="modal-title")
             div(class="modal-body")
-              p(class="modalBody") Modal body text goes here.
+              p(class="modalBody")
             div(class="modal-footer")
-              button(type="button",class="btn btn-secondary",data-dismiss="modal") Kapat!
+              button(type="button",class="btn btn-secondary",data-dismiss="modal")
       block content
 
     include ./footer.jade

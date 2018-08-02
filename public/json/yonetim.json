@@ -1,0 +1,39 @@
+{
+    "dukkanlar": [
+        {
+            "name":"Santral",
+            "phone":"0212 675 21 60-65",
+            "notes":""
+        },
+        {
+            "name":"Teknik İşler Birimi",
+            "phone":"0544 363 1335",
+            "notes":""
+        },
+        {
+            "name":"Teknik İşler Sorumlusu",
+            "phone":"0537 855 0395",
+            "notes":""
+        },
+        {
+            "name":"Güvenlik Birimi",
+            "phone":"0507 403 9854",
+            "notes":""
+        },
+        {
+            "name":"Güvenlik Sorumlusu",
+            "phone":"0507 403 9843",
+            "notes":""
+        },
+        {
+            "name":"Site Müdür Yardımcısı",
+            "phone":"0530 149 8274",
+            "notes":"Aleyna Altuntaş"
+        },
+        {
+            "name":"Site Müdürü",
+            "phone":"0537 854 1000",
+            "notes":"Namık Kemal Özgüler"
+        }
+    ]
+}
