@@ -7,37 +7,37 @@ var pageData = {
   index:{
     title:'My World Europe',
     description:'Ağaoğlu My World Europe Site Sakinleri - Bilgi Platformu',
-    canonical:'http://www.myworldeurope.net',
+    canonical:'https://myworldeurope.net',
     keywords:'ağaoğlu, ağaoğlu my world europe, my world europe, myworldeurope'
   },
   servisler:{
     title:'Servis Saatleri - My World Europe',
     description:'Ağaoğlu My World Europe Sitesi\'nden Geçen Servislerin Saatleri',
-    canonical:'http://www.myworldeurope.net/servisler',
+    canonical:'https://myworldeurope.net/servisler',
     keywords:'ağaoğlu, my world europe, servis, myworldeurope servis'
   },
   iett:{
     title:'İETT Saatleri - My World Europe',
     description:'Ağaoğlu My World Europe Sitesi\'nden Geçen Otobüslerin Saatleri',
-    canonical:'http://www.myworldeurope.net/iett',
+    canonical:'https://myworldeurope.net/iett',
     keywords:'ağaoğlu, my world europe, iett, myworldeurope iett, otobüs, my world europe otobüs'
   },
   dukkanlar:{
     title:'Çarşı Dükkanları - My World Europe',
     description:'Ağaoğlu My World Europe Sitesi, Çarşı Alanı İrtibat Numaraları',
-    canonical:'http://www.myworldeurope.net/dukkanlar',
+    canonical:'https://myworldeurope.net/dukkanlar',
     keywords:'ağaoğlu, my world europe, çarşı, dükkan, alış veriş'
   },
   yonetim:{
     title:'Site Yönetimi - My World Europe',
     description:'Ağaoğlu My World Europe Sitesi, Site Yönetimi İrtibat Numaraları',
-    canonical:'http://www.myworldeurope.net/yonetim',
+    canonical:'https://myworldeurope.net/yonetim',
     keywords:'ağaoğlu, my world europe, yonetim, site yönetimi'
   },
   iletisim:{
     title:'İletişim - My World Europe',
     description:'Ağaoğlu My World Europe Web Sitesi Yöneticilerine Ulaşın',
-    canonical:'http://www.myworldeurope.net/iletisim',
+    canonical:'https://myworldeurope.net/iletisim',
     keywords:'ağaoğlu, my world europe, iletişim'
   }
 }

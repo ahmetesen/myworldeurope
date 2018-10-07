@@ -12,9 +12,17 @@ var express = require('express')
   , path = require('path');
 
 var app = express();
+var basicAuth = require('express-basic-auth');
+
+
+app.use(basicAuth({
+    users: { 'ahmetesen': '3265206' },
+    challenge: true,
+    realm: 'Imb4T3st4pp',
+}));
 
 app.configure(function(){
-  app.set('port', process.env.PORT || 3000);
+  app.set('port', process.env.PORT || 80);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.favicon());
@@ -23,10 +31,17 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
+  app.use(basicAuth({
+    users: { 'admin': 'supersecret' }
+  }));
 });
 
 app.configure('development', function(){
   app.use(express.errorHandler());
+  app.use(basicAuth({
+    users: { 'admin': 'supersecret' }
+  }));
+
 });
 
 app.get('/', pageRoutes.index);

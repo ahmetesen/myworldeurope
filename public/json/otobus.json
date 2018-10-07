@@ -1,11 +1,11 @@
 {
-    "MK19<br>Mahmutbey":{
+    "MK19<br>Ziya Gökalp - Arenapark":{
         "id":"mk19",
-            "Site'den Mahmutbey Yönüne":{
-                "İş Günleri":["06:20","06:50","07:30","08:20","09:55","11:30","13:00","14:30","15:20","16:10","17:00","17:55","18:40","19:40","21:20"],
-                "Duraklar":["A Kapısı","Kreş","Ağaoğlu Çarşı","B Kapısı","Keresteciler Sitesi","Elektrik Kurumu","İmsan Sanayi Sitesi","Hastane","Tem Çıkışı","Bahçeler","Mahmutbey Metro","Saray Sokak","Mahmutbey Köprüsü","İstoç Oto Market","Demirciler Sitesi","Masko 1","Masko 2","Masko 3","Kreş","Ağaoğlu Çarşı","B Kapısı"]
+            "Site'den Arenapark Yönüne":{
+                "İş Günleri":["06:20","06:50","07:40","08:20","09:00","09:40","10:20","11:00","11:35","12:10","12:45","13:20","14:00","14:35","15:10","15:45","16:20","17:00","17:40","18:20","19:00","19:40","20:20","21:00"],
+                "Duraklar":["A Kapısı","Kreş","Ağaoğlu Çarşı","B Kapısı","Ayazma İlkokulu","Ziya Gökalp","Keresteciler Sitesi","Elektrik Kurumu","İmsan Sanayi Sitesi","İkitelli Garajı","Arenapark","İkitelli Garajı","İmsan Sanayi Sitesi","Elektrik Kurumu","Keresteciler Sitesi","Ziya Gökalp","Ayazma İlkokulu","B Kapısı","Çarşı","Kreş","A Kapısı"]
         },
-        "Notlar":[ "Güncellenme Tarihi: 21-07-2018", "Ring Seferdir. Mahmutbey'de beklemez.","Haftasonu hizmet vermemektedir."]
+        "Notlar":[ "Güncellenme Tarihi: 20-09-2018", "Ring Seferdir. Arenapark durağında beklemez.","Haftasonu hizmet vermemektedir."]
     },
     "31Y<br>Yenikapı":{
         "id":"31y",
