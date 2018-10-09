@@ -22,7 +22,7 @@ app.use(basicAuth({
 }));
 
 app.configure(function(){
-  app.set('port', process.env.PORT || 80);
+  app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.favicon());
@@ -31,17 +31,10 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
-  app.use(basicAuth({
-    users: { 'admin': 'supersecret' }
-  }));
 });
 
 app.configure('development', function(){
   app.use(express.errorHandler());
-  app.use(basicAuth({
-    users: { 'admin': 'supersecret' }
-  }));
-
 });
 
 app.get('/', pageRoutes.index);

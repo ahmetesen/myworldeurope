@@ -2,10 +2,11 @@
     "MK19<br>Ziya Gökalp - Arenapark":{
         "id":"mk19",
             "Site'den Arenapark Yönüne":{
-                "İş Günleri":["06:20","06:50","07:40","08:20","09:00","09:40","10:20","11:00","11:35","12:10","12:45","13:20","14:00","14:35","15:10","15:45","16:20","17:00","17:40","18:20","19:00","19:40","20:20","21:00"],
+                "İş Günleri":["06:20","06:50","07:40","08:40","09:30","10:20","11:10","12:00","12:50","13:50","14:40","15:30","16:20","17:10","18:00","18:55","19:50","20:40"],
+                "Cumartesi":["06:20","06:50","07:40","08:20","09:00","09:40","10:20","11:00","11:35","12:10","12:45","13:20","14:00","14:35","15:10","15:45","16:20","17:00","17:40","18:20","19:00","19:40","20:20","21:00"],                
                 "Duraklar":["A Kapısı","Kreş","Ağaoğlu Çarşı","B Kapısı","Ayazma İlkokulu","Ziya Gökalp","Keresteciler Sitesi","Elektrik Kurumu","İmsan Sanayi Sitesi","İkitelli Garajı","Arenapark","İkitelli Garajı","İmsan Sanayi Sitesi","Elektrik Kurumu","Keresteciler Sitesi","Ziya Gökalp","Ayazma İlkokulu","B Kapısı","Çarşı","Kreş","A Kapısı"]
         },
-        "Notlar":[ "Güncellenme Tarihi: 20-09-2018", "Ring Seferdir. Arenapark durağında beklemez.","Haftasonu hizmet vermemektedir."]
+        "Notlar":[ "Güncellenme Tarihi: 09-10-2018", "Ring Seferdir. Arenapark durağında beklemez.","Haftasonu hizmet vermemektedir."]
     },
     "31Y<br>Yenikapı":{
         "id":"31y",

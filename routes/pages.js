@@ -5,34 +5,34 @@
 
 var pageData = {
   index:{
-    title:'My World Europe',
-    description:'Ağaoğlu My World Europe Site Sakinleri - Bilgi Platformu',
+    title:'My World Europe | Siteden Geçen Otobüsler - AVM Servisleri - Çarşı Alanı - Yönetim',
+    description:'Başakşehir Ziya Gökalp Mahallesi\'nde bulunan Ağaoğlu My World Europe Sitesi sakinleri için bilgi paylaşım platformudur. Sitemiz, Ayazma, Kredi ve Yurtlar Kurumu, Kanuni Sultan Süleyman Yurdu yanındadır.',
     canonical:'https://myworldeurope.net',
-    keywords:'ağaoğlu, ağaoğlu my world europe, my world europe, myworldeurope'
+    keywords:'my world europe, ağaoğlu my world europe, ağaoğlu, myworldeurope, my world europe otobüs, ziya gökalp otobüs, ziya gökalp servis, ziya gökalp ağaoğlu, kanuni sultan süleyman yurdu'
   },
   servisler:{
     title:'Servis Saatleri - My World Europe',
-    description:'Ağaoğlu My World Europe Sitesi\'nden Geçen Servislerin Saatleri',
+    description:'Ağaoğlu My World Europe Sitesi\'nden Geçen AVM Servislerinin Saatleri',
     canonical:'https://myworldeurope.net/servisler',
-    keywords:'ağaoğlu, my world europe, servis, myworldeurope servis'
+    keywords:'ağaoğlu, my world europe, servis, arenapark, moi, mall of istanbul, kanuni sultan süleyman, myworldeurope servis, venezia, 212 avm'
   },
   iett:{
     title:'İETT Saatleri - My World Europe',
-    description:'Ağaoğlu My World Europe Sitesi\'nden Geçen Otobüslerin Saatleri',
+    description:'Ağaoğlu My World Europe Sitesi\'nden Geçen IETT Otobüslerinin Saatleri',
     canonical:'https://myworldeurope.net/iett',
-    keywords:'ağaoğlu, my world europe, iett, myworldeurope iett, otobüs, my world europe otobüs'
+    keywords:'ağaoğlu, my world europe, iett, myworldeurope iett, otobüs, my world europe otobüs, 79K, MK19, 31Y, yurt, kyk'
   },
   dukkanlar:{
     title:'Çarşı Dükkanları - My World Europe',
     description:'Ağaoğlu My World Europe Sitesi, Çarşı Alanı İrtibat Numaraları',
     canonical:'https://myworldeurope.net/dukkanlar',
-    keywords:'ağaoğlu, my world europe, çarşı, dükkan, alış veriş'
+    keywords:'ağaoğlu, my world europe, çarşı, dükkan, alış veriş, A101, Migros, Robert\'s Coffee, Turyap, Remax, Alf Alliance'
   },
   yonetim:{
     title:'Site Yönetimi - My World Europe',
     description:'Ağaoğlu My World Europe Sitesi, Site Yönetimi İrtibat Numaraları',
     canonical:'https://myworldeurope.net/yonetim',
-    keywords:'ağaoğlu, my world europe, yonetim, site yönetimi'
+    keywords:'ağaoğlu, my world europe, yonetim, site yönetimi, güvenlik, teknik servis'
   },
   iletisim:{
     title:'İletişim - My World Europe',
