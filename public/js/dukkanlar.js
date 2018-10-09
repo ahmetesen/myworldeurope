@@ -8,11 +8,11 @@ $(document).ready(function(){
             var itemContainer = $("<div></div>");
             itemContainer.addClass("row dukkan-item-container");
             var itemName = $("<div></div>");
-            itemName.addClass("col-sm-6");
+            itemName.addClass("col-6");
             itemName.append(value.name);
 
             var itemPhone = $("<div></div>");
-            itemPhone.addClass("col-sm-6 text-right");
+            itemPhone.addClass("col-6 text-right");
             phoneLink = $("<a></a>");
             phoneLink.attr("href","tel:"+value.phone);
             phoneLink.append(value.phone)
