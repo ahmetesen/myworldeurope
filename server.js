@@ -7,10 +7,8 @@ var express = require('express')
   , mailsender = require('./mailsender')
   , pageRoutes = require('./routes/pages')
   , user = require('./routes/user')
-  //, json = require('./routes/json')
   , http = require('http')
   , path = require('path');
-
 var app = express();
 var basicAuth = require('express-basic-auth');
 
@@ -43,11 +41,9 @@ app.get('/iett',pageRoutes.iett);
 app.get('/dukkanlar',pageRoutes.dukkanlar);
 app.get('/yonetim',pageRoutes.yonetim);
 app.get('/iletisim',pageRoutes.iletisim);
-//app.get('/json/servisdata',json.servisdata);
 app.get('/users', user.list);
 app.post('/sendmail', mailsender.mailsender);
 app.post('/savevisits',pageRoutes.save);
-
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });

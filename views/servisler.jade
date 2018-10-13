@@ -1,5 +1,29 @@
+
 extends ./layout
 
 block content
-    script(src="./js/servis.js")
-    include ./htmls/servisler.html
+    - var headerCount = 0
+    ul(id="header",class="nav nav-pills text-center",role="tablist")
+        each value,index in data
+            li(class="nav-item col-xs-6 col-sm-3")
+                if headerCount==0
+                    a(class="nav-link active show",data-toggle="tab",href="#"+value.id)=index
+                else
+                    a(class="nav-link",data-toggle="tab",href="#"+value.id)=index
+            - headerCount++
+        - headerCount = 0
+
+    div(id="content",class="tab-content")
+        br
+        each value,index in data
+            div(id=value.id,class=headerCount=== 0 ? "container tab-pane active show" : "container tab-pane")
+                each subValue,subIndex in value
+                    if(subIndex == "id")
+                        -continue
+                    h6=subIndex
+                    ul(class='list-group-horizontal')
+                        each listValue,listIndex in subValue
+                            li(class=subIndex=="Notlar"?"":"list-group-item")=listValue
+
+            - headerCount++
+        -headerCount=0
