@@ -191,6 +191,10 @@ main.container{
   content: "\f067"; 
 }
 
-.dukkan-item-container{
+.contact-item-container{
   padding: 0;
+}
+
+.h2, h2{
+  font-size:1.2rem;
 }

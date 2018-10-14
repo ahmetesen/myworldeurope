@@ -6,7 +6,7 @@ $(document).ready(function($) {
     e.stopPropagation();
     response = grecaptcha.getResponse();
     if (response.length === 0) {
-      $( '.msg-error').text( "Lütfen üstteki kutucuğu işaretleyiniz." );
+      $( '.msg-error').text( "Lütfen üstteki kutucuğu işaretleyiniz.\n" );
       if( !$('#recaptcha').hasClass( "error" ) ){
         $('#recaptcha').addClass( "error" );
       }
@@ -40,7 +40,6 @@ $(document).ready(function($) {
     $.post('./sendmail', data)
       .done(function(res){
         showTimeoutModal("Bilgi",res.responseDesc);
-        console.log("done",res);
       })
       .fail(function(res){
         showSimpleModal("Uyarı!",res.responseDesc);

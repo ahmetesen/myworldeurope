@@ -7,28 +7,33 @@
 
 
 <url>
-  <loc>http://www.myworldeurope.net/</loc>
-  <lastmod>2018-10-03T19:12:00+00:00</lastmod>
+  <loc>http://myworldeurope.net/</loc>
+  <lastmod>2018-10-14T19:12:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.myworldeurope.net/servisler</loc>
-  <lastmod>2018-10-03T19:12:00+00:00</lastmod>
+  <loc>http://myworldeurope.net/servisler</loc>
+  <lastmod>2018-10-14T19:12:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.myworldeurope.net/iett</loc>
-  <lastmod>2018-10-03T19:12:00+00:00</lastmod>
+  <loc>http://myworldeurope.net/iett</loc>
+  <lastmod>2018-10-14T19:12:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.myworldeurope.net/dukkanlar</loc>
-  <lastmod>2018-10-03T19:12:00+00:00</lastmod>
+  <loc>http://myworldeurope.net/dukkanlar</loc>
+  <lastmod>2018-10-14T19:12:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.myworldeurope.net/iletisim</loc>
-  <lastmod>2018-10-03T19:12:00+00:00</lastmod>
+  <loc>http://myworldeurope.net/yonetim</loc>
+  <lastmod>2018-10-14T19:12:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myworldeurope.net/iletisim</loc>
+  <lastmod>2018-10-14T19:12:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

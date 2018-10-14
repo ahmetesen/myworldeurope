@@ -1,5 +1,15 @@
 extends ./layout
-
 block content
     script(src="./js/yonetim.js")
-    include ./htmls/yonetim.html
+    div(class="container mt-3")
+        h2 Site Yönetimi - İletişim Bilgileri
+        p Aşağıdaki kutudan aradığınız bölüm/kişinin telefon numarasını filtreleyebilirsiniz.
+        input(class="form-control",id="yonetimSearch",type="text",placeholder="Ara..")
+        br
+        ul(class="list-group",id="yonetimList")
+            each value,index in data.yonetim
+                li(class="list-group-item")
+                    div(class="row contact-item-container")
+                        div(class="col-6")=value.name
+                        div(class="col-6 text-right")
+                            a(href="tel:#{value.phone}")=value.phone

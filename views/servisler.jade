@@ -1,6 +1,4 @@
-
 extends ./layout
-
 block content
     - var headerCount = 0
     ul(id="header",class="nav nav-pills text-center",role="tablist")
@@ -12,7 +10,6 @@ block content
                     a(class="nav-link",data-toggle="tab",href="#"+value.id)=index
             - headerCount++
         - headerCount = 0
-
     div(id="content",class="tab-content")
         br
         each value,index in data
@@ -20,10 +17,9 @@ block content
                 each subValue,subIndex in value
                     if(subIndex == "id")
                         -continue
-                    h6=subIndex
+                    h2=subIndex
                     ul(class='list-group-horizontal')
                         each listValue,listIndex in subValue
                             li(class=subIndex=="Notlar"?"":"list-group-item")=listValue
-
             - headerCount++
         -headerCount=0

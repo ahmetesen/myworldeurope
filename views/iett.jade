@@ -1,5 +1,32 @@
 extends ./layout
-
 block content
-    script(src="./js/iett.js")
-    include ./htmls/iett.html
+    - var headerCount = 0
+    ul(id="header",class="nav nav-pills text-center",role="tablist")
+        each value,index in data
+            li(class="nav-item col-xs-6 col-sm-3")
+                if headerCount==0
+                    a(class="nav-link active show",data-toggle="tab",href="#"+value.id) !{index}
+                else
+                    a(class="nav-link",data-toggle="tab",href="#"+value.id) !{index}
+            - headerCount++
+        - headerCount = 0
+    div(id="content",class="tab-content")
+        br
+        each value,index in data
+            div(id=value.id,class=headerCount=== 0 ? "container tab-pane active show" : "container tab-pane")
+                each subValue,subIndex in value
+                    if(subIndex == "id")
+                        -continue
+                    h2=subIndex
+                    if subIndex=="Notlar"
+                        ul(class='list-group-horizontal')
+                            each listValue,listIndex in subValue
+                                li !{listValue}
+                    else
+                        each h6Value,h6Index in subValue
+                            h6 <br> !{h6Index} 
+                            ul(class="list-group-horizontal")
+                                each itemValue,itemIndex in h6Value
+                                    li(class="list-group-item") !{itemValue}
+            - headerCount++
+        -headerCount=0
